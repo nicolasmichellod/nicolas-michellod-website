@@ -12,6 +12,7 @@
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
       color: #003366;
+      padding-top: 110px; /* push content below fixed header */
     }
     header {
       background-color: #003366;
@@ -22,6 +23,8 @@
       top: 0;
       width: 100%;
       z-index: 1000;
+      height: 100px; /* fixed height to match padding */
+      box-sizing: border-box;
     }
     nav a {
       color: white;
@@ -30,21 +33,18 @@
       font-weight: bold;
     }
     section {
-      padding: 4rem 1rem 0.5rem; /* less bottom padding overall */
+      padding: 0.5rem 1rem 0.5rem;
       max-width: 800px;
       margin: auto;
     }
-    section#about p {
-      margin-top: 1rem; /* adds space before About summary */
-    }
     section h2 {
-      margin-bottom: 0.5rem; /* less space below section titles */
+      margin-bottom: 0.3rem;
     }
     section p, section ul {
-      margin-bottom: 0.75rem; /* less space after paragraphs and lists */
+      margin-bottom: 0.5rem;
     }
     .insight {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     footer {
       background-color: #003366;
@@ -115,9 +115,9 @@
     <h2>Contact</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <label>Name</label>
-      <input type="text" name="name" required>
+      <input type="text" name="name" required />
       <label>Email</label>
-      <input type="email" name="email" required>
+      <input type="email" name="email" required />
       <label>Message</label>
       <textarea name="message" rows="4" required></textarea>
       <button type="submit">Send</button>
