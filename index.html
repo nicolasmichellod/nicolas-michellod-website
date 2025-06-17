@@ -23,14 +23,31 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      height: 100px; /* fixed height to match padding */
+      height: 100px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    nav a {
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 0 0 0.5rem;
+    }
+    header nav {
+      margin-top: 0.5rem;
+    }
+    header nav a {
       color: white;
-      margin: 0 0.5rem;
+      margin: 0 0.7rem;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    header nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 0.5rem 1rem 0.5rem;
@@ -98,15 +115,15 @@
   <section id="insights">
     <h2>Featured Insights</h2>
     <div class="insight">
-      <h3><a href="https://www.celent.com/en/insights/929807200" target="_blank">Improve or Perish!: EMEA Life Insurers’ Perspectives on Life Policy Administration Systems</a></h3>
+      <h3><a href="https://www.celent.com/en/insights/929807200" target="_blank" rel="noopener noreferrer">Improve or Perish!: EMEA Life Insurers’ Perspectives on Life Policy Administration Systems</a></h3>
       <p>Survey-based report exploring the transformation urgency for life policy administration systems among European life insurers.</p>
     </div>
     <div class="insight">
-      <h3><a href="https://www.celent.com/en/insights/970783403" target="_blank">How SaaSy Are Life Policy Administration Systems?: Fact Checking the Ambiguity of SaaS Dimensions</a></h3>
+      <h3><a href="https://www.celent.com/en/insights/970783403" target="_blank" rel="noopener noreferrer">How SaaSy Are Life Policy Administration Systems?: Fact Checking the Ambiguity of SaaS Dimensions</a></h3>
       <p>Analyzes the misuse of the term “SaaS” in insurance tech and provides clarity on what true SaaS means.</p>
     </div>
     <div class="insight">
-      <h3><a href="https://www.celent.com/en/insights/919743172" target="_blank">From Legacy to Leading Edge: The New Insurance Best-of-Breed Core System Approach</a></h3>
+      <h3><a href="https://www.celent.com/en/insights/919743172" target="_blank" rel="noopener noreferrer">From Legacy to Leading Edge: The New Insurance Best-of-Breed Core System Approach</a></h3>
       <p>Explores the shift to modular architectures in insurance IT, replacing monolithic legacy systems.</p>
     </div>
   </section>
@@ -123,7 +140,7 @@
       <button type="submit">Send</button>
     </form>
     <p>Or email directly: <a href="mailto:nicolasmichellod@icloud.com">nicolasmichellod@icloud.com</a></p>
-    <p><a href="https://www.linkedin.com/in/nicolasmichellod/" target="_blank">LinkedIn Profile</a></p>
+    <p><a href="https://www.linkedin.com/in/nicolasmichellod/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
   </section>
 
   <footer>
