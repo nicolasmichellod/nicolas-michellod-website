@@ -7,9 +7,6 @@
   <title>Nicolas Michellod</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    html {
-      scroll-padding-top: 100px;
-    }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -33,9 +30,18 @@
       font-weight: bold;
     }
     section {
-      padding: 6rem 1rem 1rem;
+      padding: 4rem 1rem 0.5rem; /* less bottom padding overall */
       max-width: 800px;
       margin: auto;
+    }
+    section#about p {
+      margin-top: 1rem; /* adds space before About summary */
+    }
+    section h2 {
+      margin-bottom: 0.5rem; /* less space below section titles */
+    }
+    section p, section ul {
+      margin-bottom: 0.75rem; /* less space after paragraphs and lists */
     }
     .insight {
       margin-bottom: 1.5rem;
